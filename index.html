@@ -24,7 +24,8 @@
 	    	background-position: center;
 	    	background-repeat: no-repeat;
 	    	opacity: 0.7;
-	    	padding: 3% 100px 3% 100px;
+	    	padding: 3% 100px;
+	    	margin: auto;
 	    }
 	    /* when hover, background image darkens */
 	    .Introduction:hover {
@@ -40,14 +41,15 @@
 			background-color: #4eaaed;
 			display: flex;
 			justify-content: space-around;
+			margin: auto;
 		}
 		/* Links inside NavigationBar */
 		.NavigationBar a {
-			float: none;
 			font-size: 30px;
 			color: white;
 			text-align: center;
-			padding: 14px 16px;
+			padding-left: 14px;
+			padding-right: 16px;
 			text-decoration: none;
 		}
 		/* The dropdown container */
@@ -62,10 +64,10 @@
 			border: none;
 			outline: none;
 			color: white;
-			padding: 14px 16px;
+			width: 100%;
 			background-color: inherit;
 			font-family: inherit; /* Important for vertical align on mobile phones */
-			margin: 0; /* Important for vertical align on mobile phones */
+			margin: auto; /* Important for vertical align on mobile phones */
 		}
 		/* Add red background color to NavigationBar links on hover */
 		.NavigationBar a:hover, .dropdown:hover .dropbtn {
@@ -210,16 +212,16 @@
   			.NavigationBar a {
     			font-size: 25px;
     			color: #404040;
-    			width: 100%;				
+    			padding-left: 200px;
+    			padding-right: 200px;
   			}
 
   			.Home, .dropdown .dropbtn  {
   				background-color: lightgrey;
-    			padding-left: 180px;
-    			padding-right: 180px;
+  				width: 100%;
   				color: #404040;
   				font-size: 25px;
-  				margin: 25px;
+  				margin: 5% auto;
   			}
 
   			.dropdown-content {
