@@ -10,8 +10,6 @@
 		    font-family: sans-serif;
 		    background-color: #ffeecc;
 		    text-align: center;
-
-		    /* Layout Styles */
 		    display: flex;
 		    flex-flow: row wrap;
 		    justify-content: center;
@@ -22,18 +20,21 @@
 	    .Introduction {
 	    	background-image: url(imgs/FilipinoMythsP1.jpg);
 	    	background-size: cover;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
 	    	opacity: 0.7;
 	    	text-align: center;
 	    	font-size: 18px;
 	    	color: orange;
-	    	padding: 3% 100px 3% 100px;
+	    	padding: 3% 100px;
+	    	margin: auto;
 	    }
 	    /* when hover, background image darkens */
 	    .Introduction:hover {
 	    	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/FilipinoMythsP1.jpg);
 	    	background-size: cover;
 	    	text-align: center;
-	    	padding: 3% 100px 3% 100px;
+	    	margin: auto;
 	    }
 
 		/* NavigationBar container */
@@ -42,15 +43,16 @@
 			background-color: #4eaaed;
 			padding: 10px 576px 10px 576px;
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
+			margin: auto;
 		}
 		/* Links inside NavigationBar */
 		.NavigationBar a {
-			float: none;
 			font-size: 30px;
 			color: white;
 			text-align: center;
-			padding: 14px 16px;
+			padding-left: 14px;
+			padding-right: 16px;
 			text-decoration: none;
 		}
 		/* The dropdown container */
@@ -65,10 +67,10 @@
 			border: none;
 			outline: none;
 			color: white;
-			padding: 14px 16px;
+			width: 100%;
 			background-color: inherit;
 			font-family: inherit; /* Important for vertical align on mobile phones */
-			margin: 0; /* Important for vertical align on mobile phones */
+			margin: auto; /* Important for vertical align on mobile phones */
 		}
 		/* Add red background color to NavigationBar links on hover */
 		.NavigationBar a:hover, .dropdown:hover .dropbtn {
