@@ -133,6 +133,10 @@
     	color: white;
     	transition: transform 450ms;
     }
+
+    .Instructions {
+    	font-size: 20px;
+    }
     /* when hover, Introduction Text container moves up */
     .Itext:hover {
     	transition: transform 500ms;
