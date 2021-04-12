@@ -20,44 +20,41 @@
 	    .Introduction {
 	    	background: url(imgs/TurkicMythsP3.jpg);
 	    	background-size: cover;
+	    	background-position: center;
 	    	background-repeat: no-repeat;
 	    	opacity: 0.7;
-	    	text-align: center;
-	    	font-size: 18px;
 	    	color: orange;
-	    	padding: 10% 100px 5% 100px;
+	    	padding: 3% 100px;
+	    	margin: auto;
 	    }
 	    /* when hover, background image darkens */
 	    .Introduction:hover {
 	    	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/TurkicMythsP3.jpg);
 	    	background-size: cover;
-	    	opacity: 0.7;
-	    	text-align: center;
-	    	font-size: 18px;
+	    	background-position: center;
+	    	background-repeat: no-repeat;
 	    	color: orange;
-	    	padding: 10% 100px 5% 100px;
 	    }
 
 		/* NavigationBar container */
 		.NavigationBar {
 			overflow: hidden;
 			background-color: #4eaaed;
-			padding: 10px 576px 10px 576px;
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
+			margin: auto;
 		}
 		/* Links inside NavigationBar */
 		.NavigationBar a {
-			float: none;
 			font-size: 30px;
 			color: white;
 			text-align: center;
-			padding: 14px 16px;
+			width: 100%;
 			text-decoration: none;
 		}
 		/* The dropdown container */
 		.dropdown {
-			float: center;
+			width: 100%;
 			overflow: hidden;
 		}
 		/* Dropdown button */
@@ -67,14 +64,14 @@
 			border: none;
 			outline: none;
 			color: white;
-			padding: 14px 16px;
+			width: 100%;
 			background-color: inherit;
 			font-family: inherit; /* Important for vertical align on mobile phones */
-			margin: 0; /* Important for vertical align on mobile phones */
+			margin: auto; /* Important for vertical align on mobile phones */
 		}
 		/* Add red background color to NavigationBar links on hover */
 		.NavigationBar a:hover, .dropdown:hover .dropbtn {
-			background-color: #ff2617;
+			color: #ff2617;
 		}
 		/* Dropdown content */
 		.dropdown-content {
@@ -84,6 +81,7 @@
 			min-width: 160px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			z-index: 1;
+			right: 10%;
 		}
 		/* Links inside dropdown */
 		.dropdown-content a {
@@ -130,11 +128,9 @@
 
 	    .Contact {
 	    	font-size: 24px;
-	    	padding-bottom: 2%;
+	    	padding: 20px;
 	    	text-align: center;
-	    	display: flex;
-	    	flex-flow: column wrap;
-	    	justify-content: center;
+	    	display: block;
 	    }
 
 	    /* Specific Styles (for more individual items) */
@@ -149,13 +145,14 @@
 	    /* when hover, Introduction Text container moves up */
 	    .Itext:hover {
 	    	transition: transform 500ms;
-    		transform: translateY(-320px);
+    		transform: translateY(-150px);
 	    }
 
 	    .cardSources {
-	    	width: 503px;
+	    	width: 100%;
 	    	border: none;
-	    	text-align: left;
+	    	margin: auto;
+	    	margin-top: 20px;
 	    }
 
 	    .ContentPics {
@@ -163,8 +160,7 @@
 		    border-style: double;
 		    height: 200px;
 		    width: 200px;
-		    margin-right: 40%;
-		    margin-left: 30%;
+		    margin: auto;
 	    }
 
 	    .ContentPicsB, .ContentPicsK {
@@ -209,15 +205,102 @@
 		}
 
 	    .Cutegif {
-	    	width: 70%;
-	    	margin-top: 35%;
-	    	border-radius: 50%;
+			width: 30%;
 	    }
 
 	    .Email, .Instagram {
-	    	padding-left: 41%;
-	    	text-align: left; 
+	    	display: inline-flex;
+	    	margin: auto;
+	    	text-align: center; 
 	    }
+
+	/* RWD Code */
+	@media only screen and (max-width: 600px) {
+		.content {
+			background-color: #ffeecc;
+			display: inline-block;
+			margin: auto;
+		}
+
+		/* NavigationBar */
+		.NavigationBar {
+			display: block;
+			flex-direction: column;
+		}
+			
+		.NavigationBar a {
+			font-size: 25px;
+			color: #404040;
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+
+		.Home, .dropdown .dropbtn  {
+			background-color: lightgrey;
+			width: 100%;
+			color: #404040;
+			font-size: 25px;
+			margin: 5% auto;
+		}
+
+		.dropdown-content {
+			width: 100%;
+			left: 0;
+		}
+
+		.dropdown-content a {
+			display: block;
+			font-size: 20px;
+			padding: 10px;
+			justify-content: center;
+			width: 100%;
+		}
+
+		.Itext {
+			font-size: 14px;
+		}
+	    /* when hover, Introduction Text container moves up */
+	    .Itext:hover {
+	    	transition: transform 500ms;
+			transform: translateY(-50px);
+	    }
+
+		/* MainContent */
+		.MainContent {
+			display: inline-block;
+			column-count: 1;	
+		}
+
+		.card {
+	    	padding-right: 20px; 
+	    	padding-left: 20px;
+	    	height: 610px;
+	    	width: 70%;
+	    	font-size: 12px; 
+			margin: 50px;;
+		}
+
+		.Cutegif {
+	    	width: 50%;
+		}
+
+		/* Contact */
+		.Contact {
+			display: inline-flex;
+			flex-direction: column;
+			width: 80%;
+			margin: auto;
+		}
+		.Email, .Instagram {
+			display: flex;
+			margin: auto;
+		}
+	}
+	@media only screen and (min-width: 601px) {
+		body {
+			background-color: #ffeecc;
+		}
+	}
 
 	</style>
 </head>
