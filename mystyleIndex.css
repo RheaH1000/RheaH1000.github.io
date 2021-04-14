@@ -239,6 +239,10 @@
 	    	transform: translateY(-50px);
 		}
 
+		.Instructions {
+			width: 100%;
+		}
+
   		/* MainContent */
   		.MainContent {
 			display: inline-block;
