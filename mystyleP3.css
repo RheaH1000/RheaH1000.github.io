@@ -104,7 +104,7 @@ body {
 }
 
 .card {
-	height: 700px;
+	height: 750px;
 	width: 500px;
 	border: outset orange;
 	margin-top: 50px;
@@ -267,7 +267,7 @@ body {
 	.card {
     	padding-right: 20px; 
     	padding-left: 20px;
-    	height: 620px;
+    	height: 650px;
     	width: 70%;
     	font-size: 12px; 
 		margin: 50px;;
