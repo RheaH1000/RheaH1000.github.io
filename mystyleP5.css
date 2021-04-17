@@ -10,18 +10,18 @@ body {
 
 /* Main Divs */
 .Introduction {
-	background: url(imgs/);
+	background: url(imgs/AustralianMythsEM.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0.7;
 	color: orange;
-	padding: 3% 100px;
+	padding: 5% 100px;
 	margin: auto;
 }
 /* when hover, background image darkens */
 .Introduction:hover {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/AustralianMythsEM.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
