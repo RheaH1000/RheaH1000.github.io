@@ -155,22 +155,22 @@ body {
     width: 200px;
     margin: auto;
 }
-
-.ContentPicsB, .ContentPicsK {
+.ContentPicsB, .ContentPicsK, .ContentPicsS, .ContentPicsA{
     border-color: #0066ff;
     border-style: double;
-    width: 130px;
     margin-right: 40%;
+}
+.ContentPicsB, .ContentPicsK {
+    width: 130px;
     margin-left: 36%;
 }
-
-.ContentPicsS, .ContentPicsA {
-    border-color: #0066ff;
-    border-style: double;
-    width: 160px;
-    margin-right: 40%;
-    margin-left: 33%;	    	
+.ContentPicsS {
+    width: 200px;
+    margin-left: 29%;	    	
 }
+.ContentPicsA {
+    width: 160px;
+    margin-left: 33%;}
 
 .Cite {
 	font-size: 10px; 
