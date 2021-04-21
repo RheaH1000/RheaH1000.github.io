@@ -155,29 +155,20 @@ body {
     width: 200px;
     margin: auto;
 }
-
 .ContentPicsB, .ContentPicsCal, .ContentPicsCam{
     border-color: #0066ff;
     border-style: double;
 }
-
-.ContentPicsP, .ContentPicsS {
+.ContentPicsP, .ContentPicsS, .ContentPicsB{
     border-color: #0066ff;
     border-style: double;
     height: 250px;
     width: 200px;
 }
-
-.ContentPicsB {
-    height: 250px;
-    width: 200px;	
-}
-
 .ContentPicsCam {
     height: 200px;
     width: 270px;
 }
-
 .ContentPicsCal {
     height: 200px;
     width: 250px;	
