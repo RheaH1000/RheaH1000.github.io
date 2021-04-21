@@ -271,9 +271,10 @@
 			width: 90%;
 			margin: auto;
 		}
-		.Email, .Instagram {
+		.email, .instagram {
 			display: flex;
 			margin: auto;
+			text-decoration: none;
 		}
   	}
 
