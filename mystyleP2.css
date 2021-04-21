@@ -285,6 +285,7 @@
 		.Email, .Instagram {
 			display: flex;
 			margin: auto;
+			text-decoration: none;
 		}
     }
 	@media only screen and (min-width: 601px) {
