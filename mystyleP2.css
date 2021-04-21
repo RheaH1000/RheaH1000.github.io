@@ -65,7 +65,7 @@
 	}
 	/* Add red background color to NavigationBar links on hover */
 	.NavigationBar a:hover, .dropdown:hover .dropbtn {
-		color: #ff2617;
+		color: black;
 	}
 	/* Dropdown content */
 	.dropdown-content {
@@ -81,7 +81,7 @@
 	.dropdown-content a {
 		float: none;
 	 	color: black;
-		padding: 12px 16px;
+		padding: 12px 0px;
 		text-decoration: none;
 		display: block;
 	 	text-align: left;
