@@ -148,12 +148,23 @@ body {
 	margin-top: 20px;
 }
 
-.ContentPics {
+.ContentPics, .ContentPicsG, .ContentPicsKK, .ContentPicsY {
     border-color: #0066ff;
     border-style: double;
     height: 200px;
-    width: 200px;
     margin: auto;
+}
+.ContentPics {
+    width: 300px;
+}
+.ContentPicsG {
+    width: 275px;
+}
+.ContentPicsKK {
+    width: 325px;
+}
+.ContentPicsY{
+    width: 205px;
 }
 
 .Cite {
