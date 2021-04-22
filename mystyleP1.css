@@ -149,16 +149,14 @@
     	margin-top: 20px;
     }
 
-    .ContentPics {
+    .ContentPics, .ContentPicsMa, .ContentPicsMu, .ContentPicsS {
 	    border-color: #0066ff;
 	    border-style: double;
 	    height: 200px;
-	    width: 200px;
 	    margin: auto;
     }
-    .ContentPicsMa, .ContentPicsMu, .ContentPicsS {
-	    border-color: #0066ff;
-	    border-style: double;
+    .ContentPics {
+	    width: 200px;
     }
     .ContentPicsMa {
     	width: 50%;
