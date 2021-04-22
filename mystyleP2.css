@@ -149,19 +149,17 @@
     	margin-top: 20px;
     }
 
-    .ContentPics {
+    .ContentPics, .ContentPicsH, .ContentPicsFN, .ContentPicsM, .ContentPicsWD, .ContentPicsU {
 	    border-color: #0066ff;
 	    border-style: double;
 	    height: 200px;
-	    width: 200px;
 	    margin: auto;
-    }
-    .ContentPicsH, .ContentPicsFN, .ContentPicsM, .ContentPicsWD, .ContentPicsU {
-	    border-color: #0066ff;
-	    border-style: double;
 	}
+    .ContentPics {
+	    width: 200px;
+    }
 	.ContentPicsH {
-		width: 55%;
+		width: 70%;
 	}		
 	.ContentPicsFN {
 		width: 30%;
