@@ -148,20 +148,17 @@ body {
 	margin-top: 20px;
 }
 
-.ContentPics {
+.ContentPics, .ContentPicsB, .ContentPicsCal, .ContentPicsCam, .ContentPicsP, .ContentPicsS {
     border-color: #0066ff;
     border-style: double;
+    margin: auto;
+}
+.ContentPics {
     height: 200px;
     width: 200px;
     margin: auto;
 }
-.ContentPicsB, .ContentPicsCal, .ContentPicsCam{
-    border-color: #0066ff;
-    border-style: double;
-}
 .ContentPicsP, .ContentPicsS, .ContentPicsB{
-    border-color: #0066ff;
-    border-style: double;
     height: 250px;
     width: 200px;
 }
