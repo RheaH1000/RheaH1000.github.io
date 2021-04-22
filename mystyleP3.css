@@ -148,16 +148,16 @@ body {
 	margin-top: 20px;
 }
 
-.ContentPics {
+.ContentPics, .ContentPicsB, .ContentPicsK, .ContentPicsS, .ContentPicsA {
     border-color: #0066ff;
     border-style: double;
+}
+.ContentPics {
     height: 200px;
     width: 200px;
     margin: auto;
 }
 .ContentPicsB, .ContentPicsK, .ContentPicsS, .ContentPicsA{
-    border-color: #0066ff;
-    border-style: double;
     margin-right: 40%;
 }
 .ContentPicsB, .ContentPicsK {
