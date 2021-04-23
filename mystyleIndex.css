@@ -1,174 +1,172 @@
-    .Introduction {
-    	background: url(imgs/IMythWH.jpg);
-    	background-size: cover;
-    	background-position: center;
-    	background-repeat: no-repeat;
-    	opacity: 0.7;
-    	padding: 3% 110px;
-    	margin: auto;
-    }
-    /* when hover, background image darkens */
-    .Introduction:hover {
-    	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/IMythWH.jpg);
-    	background-size: cover;
-    	background-position: center;
-    	background-repeat: no-repeat;
-    }
+.Introduction {
+	background: url(imgs/IMythWH.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	padding: 3% 110px;
+	margin: auto;
+}
+/* when hover, background image darkens */
+.Introduction:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/IMythWH.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
-    .MainContent {
-    	color: white;
-    	display: flex;
-	    flex-flow: row wrap;
-	    justify-content: space-around;
-	    padding-top: 3%;
+.MainContent {
+	color: white;
+	display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+
+.cardI {
+	background-color: #4eaaed;
+	border: solid black;
+	padding-right: 20px; 
+	padding-left: 20px;
+	height: 700px;
+	width: 500px;
+	font-size: 18px;
+	box-shadow: 7px 10px 10px #888888;
+	border-radius: 15px;
+	transition: all .2s ease-in-out;
+	margin-bottom: 50px;
+}
+.cardI:hover {
+	transform: scale(1.02);
+}
+
+/* Specific Styles (for more individual items) */
+.Itext {
+	margin-top: 20%;
+	background: rgba(0,0,0,0.7);
+	padding: 20px;
+  text-align: center;
+	font-size: 18px;
+	color: white;
+	transition: transform 450ms;
+}
+
+.Instructions {
+	font-size: 18px;
+}
+/* when hover, Introduction Text container moves up */
+.Itext:hover {
+	transition: transform 500ms;
+  transform: translateY(-120px);
+}
+
+.ContentPicsA, .ContentPicsP, .ContentPicsT, .ContentPicsC, .ContentPicsAu{
+	width: 30%;
+	border-radius: 50%;
+	margin-top: 9%;
+}
+
+.ContentPicsP {
+	margin-top: 3%;
+}
+
+.ContentPicsC {
+	margin-top: 1%;
+}
+
+.cardW {
+	width: 100%;
+	margin: 50px auto;
+}
+
+/* RWD Code */
+@media only screen and (max-width: 600px) {
+	.content {
+		background-color: #ffeecc;
+		display: inline-block;
+		margin: auto;
 	}
 
-    .card {
-    	background-color: #4eaaed;
-    	border: solid black;
-    	padding-right: 20px; 
-    	padding-left: 20px;
-    	height: 700px;
-    	width: 500px;
-    	font-size: 18px;
-    	box-shadow: 7px 10px 10px #888888;
-    	border-radius: 15px;
-    	transition: all .2s ease-in-out;
-    	margin-bottom: 50px;
-    }
-    .card:hover {
-			transform: scale(1.02);
+	/* NavigationBar */
+	.NavigationBar {
+  	display: block;
+  	flex-direction: column;
+	}
+		
+	.NavigationBar a {
+		font-size: 25px;
+		color: #404040;
+		padding-left: 200px;
+		padding-right: 200px;
 	}
 
-    /* Specific Styles (for more individual items) */
-    .Itext {
-    	margin-top: 20%;
-    	background: rgba(0,0,0,0.7);
-    	padding: 20px;
-		text-align: center;
-    	font-size: 18px;
-    	color: white;
-    	transition: transform 450ms;
-    }
+	.Home, .dropdown .dropbtn  {
+		background-color: lightgrey;
+		width: 100%;
+		color: #404040;
+		font-size: 25px;
+		margin: 5% auto;
+	}
 
-    .Instructions {
-    	font-size: 18px;
-    }
-    /* when hover, Introduction Text container moves up */
-    .Itext:hover {
-    	transition: transform 500ms;
-		transform: translateY(-120px);
-    }
+	.dropdown-content {
+		width: 100%;
+		left: 0;
+	}
 
-    .ContentPicsA, .ContentPicsP, .ContentPicsT, .ContentPicsC, .ContentPicsAu{
-    	width: 30%;
-    	border-radius: 50%;
-    	margin-top: 9%;
-    }
+	.dropdown-content a {
+ 		display: block;
+		font-size: 20px;
+		padding: 10px;
+		justify-content: center;
+		width: 100%;
+	}
 
-    .ContentPicsP {
-    	margin-top: 3%;
-    }
+	.Itext {
+		font-size: 16px;
+	}
+   /* when hover, Introduction Text container moves up */
+  .Itext:hover {
+    transition: transform 500ms;
+    transform: translateY(-50px);
+  }
 
-    .ContentPicsC {
-    	margin-top: 1%;
-    }
+  .Instructions {
+  	width: 100%;
+  }
 
-    .cardW {
-    	width: 100%;
-    	margin: 50px auto;
-    }
+	/* MainContent */
+	.MainContent {
+  	display: inline-block;
+  	column-count: 1;
+	}
 
-	/* RWD Code */
-	@media only screen and (max-width: 600px) {
-  		.content {
-    		background-color: #ffeecc;
-    		display: inline-block;
-    		margin: auto;
-  		}
+	.card {
+    padding-right: 20px; 
+    padding-left: 20px;
+    height: 630px;
+    width: 70%;
+    font-size: 16px; 
+		margin: 50px;
+	}
 
-  		/* NavigationBar */
-  		.NavigationBar {
-			display: block;
-			flex-direction: column;
-  		}
-  			
-  		.NavigationBar a {
-    		font-size: 25px;
-    		color: #404040;
-    		padding-left: 200px;
-    		padding-right: 200px;
-  		}
+	.ContentPicsW {
+		width: 50%;
+	}
 
-  		.Home, .dropdown .dropbtn  {
-  			background-color: lightgrey;
-  			width: 100%;
-  			color: #404040;
-  			font-size: 25px;
-  			margin: 5% auto;
-  		}
+	/* Contact */
+.Contact {
+	display: inline-flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+}
+.email, .instagram {
+	display: flex;
+	margin: auto;
+	text-decoration: none;
+}
 
-  		.dropdown-content {
-  			width: 100%;
-  			left: 0;
-  		}
-
-  		.dropdown-content a {
-     		display: block;
-    		font-size: 20px;
-    		padding: 10px;
-    		justify-content: center;
-    		width: 100%;
-  		}
-
-  		.Itext {
-  			font-size: 16px;
-  		}
-		   /* when hover, Introduction Text container moves up */
-		.Itext:hover {
-		    transition: transform 500ms;
-	    	transform: translateY(-50px);
-		}
-
-		.Instructions {
-			width: 100%;
-		}
-
-  		/* MainContent */
-  		.MainContent {
-			display: inline-block;
-			column-count: 1;
-  		}
-
-  		.card {
-		    padding-right: 20px; 
-		    padding-left: 20px;
-		    height: 630px;
-		    width: 70%;
-		    font-size: 16px; 
-  			margin: 50px;
-  		}
-
-  		.ContentPicsW {
-  			width: 50%;
-  		}
-
-  		/* Contact */
-		.Contact {
-			display: inline-flex;
-			flex-direction: column;
-			width: 90%;
-			margin: auto;
-		}
-		.email, .instagram {
-			display: flex;
-			margin: auto;
-			text-decoration: none;
-		}
-  	}
-
-  	@media only screen and (min-width: 601px) {
-  		body {
-			background-color: #ffeecc;
-		}
-  	}
+@media only screen and (min-width: 601px) {
+	body {
+	background-color: #ffeecc;
+}
