@@ -8,6 +8,39 @@ body {
 	margin: auto;
 }
 
+/* Introduction CSS */
+.Introduction {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	padding: 3% 100px;
+	margin: auto;
+}
+/* Introduction Hover CSS */
+.Introduction:hover {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: orange;
+}
+
+/* Introduction Text */
+.Itext {
+	margin-top: 20%;
+	background: rgba(0,0,0,0.7);
+	padding: 20px;
+	font-size: 20px;
+	color: orange;
+	transition: transform 450ms;
+}
+/* when hover, Introduction Text container moves up */
+.Itext:hover {
+	transition: transform 500ms;
+  	transform: translateY(-120px)
+}
+/* End Introduction CSS */
+
 /* Navbar CSS */
 .NavigationBar {
 	overflow: hidden;
@@ -47,7 +80,7 @@ body {
 }
 /* Add red background color to NavigationBar links on hover */
 .NavigationBar a:hover, .dropdown:hover .dropbtn {
-	color: black;
+	color: red;
 }
 /* Dropdown content */
 .dropdown-content {
@@ -78,6 +111,35 @@ body {
 	display: block;
 }
 /* End Navbar CSS */
+
+/* Main Content CSS */
+.MainContent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+/* card */
+.card {
+	width: 500px;
+	border: outset orange;
+	margin-top: 50px;
+	padding-right: 25px; 
+	padding-left: 25px;
+	text-align: center;
+	box-shadow: 7px 10px 10px #888888;
+	border-radius: 15px;
+	transition: all .2s ease-in-out;
+}
+
+/* Card Sources */ 
+.cardSources {
+	width: 100%;
+	border: none;
+	margin: auto;
+	margin-top: 20px;
+}
+/* End Main Content CSS */
 
 /* Cite CSS */
 .Cite {
