@@ -24,6 +24,8 @@ body {
 	color: white;
 	text-align: center;
 	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
 	text-decoration: none;
 }
 /* The dropdown container */
@@ -125,3 +127,108 @@ body {
 	text-decoration: none;
 }
 /* End Footer CSS */
+
+/* RWD Code */
+@media only screen and (max-width: 600px) {
+	.content {
+		background-color: #ffeecc;
+		display: inline-block;
+		margin: auto;
+	}
+
+	/* NavigationBar */
+	.NavigationBar {
+	  	display: block;
+	  	flex-direction: column;
+	}
+		
+	.NavigationBar a {
+		font-size: 25px;
+		color: #404040;
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+
+	.Home, .dropdown .dropbtn  {
+		background-color: lightgrey;
+		width: 100%;
+		color: #404040;
+		font-size: 25px;
+		margin: 5% auto;
+	}
+
+	.dropdown-content {
+		width: 100%;
+		left: 0;
+	}
+
+	.dropdown-content a {
+ 		display: block;
+		font-size: 20px;
+		padding: 10px;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.Itext {
+		font-size: 16px;
+	}
+   	/* when hover, Introduction Text container moves up */
+  	.Itext:hover {
+		transition: transform 500ms;
+		transform: translateY(-50px);
+  	}
+
+	.Instructions {
+		width: 100%;
+	}
+
+	/* MainContent */
+	.MainContent {
+	  	display: inline-block;
+	  	column-count: 1;
+	}
+
+	.card {
+	    padding-right: 20px; 
+	    padding-left: 20px;
+	    height: 950px;
+	    width: 70%;
+	    font-size: 12px; 
+		margin: 50px;
+	}
+	.card:hover {
+		transform: scale(1.02);
+	}
+
+	/* Only for Index Cards CSS */
+	.ContentPicsW {
+		width: 50%;
+	}
+	.cardI {
+	    padding-right: 20px; 
+	    padding-left: 20px;
+	    height: 630px;
+	    width: 70%;
+	    font-size: 16px; 
+		margin: 50px;
+	}
+
+	/* Contact */
+	.Contact {
+		display: inline-flex;
+		flex-direction: column;
+		width: 80%;
+		margin: auto;
+	}
+	.email, .instagram {
+		display: flex;
+		margin: auto;
+		text-decoration: none;
+	}
+
+@media only screen and (min-width: 601px) {
+	body {
+		background-color: #ffeecc;
+	}
+}
