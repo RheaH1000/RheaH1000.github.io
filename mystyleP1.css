@@ -16,7 +16,7 @@
 }
 
 /* Specific Styles (for more individual items) */
-.ContentPics, .ContentPicsMa, .ContentPicsMu, .ContentPicsS {
+.ContentPics, .ContentPicsMa, .ContentPicsMu, .ContentPicsSa {
     border-color: #0066ff;
     border-style: double;
     height: 200px;
