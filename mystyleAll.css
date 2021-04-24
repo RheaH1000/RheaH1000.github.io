@@ -280,8 +280,14 @@ body {
 	}
 
 	/* Only for P3 css to fix spacing of certain images */
-	.ContentPicsB, .ContentPicsK, .ContentPicsS, .ContentPicsA{
-	    margin-left: 20%;
+	.ContentPicsB, .ContentPicsK{
+	    margin-left: 30%;
+	}
+	.ContentPicsS {
+		margin-left: 20%;
+	}
+	.ContentPicsA {
+		margin-left: 27%;
 	}
 
 	/* Contact */
