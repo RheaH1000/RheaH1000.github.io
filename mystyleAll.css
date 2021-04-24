@@ -279,6 +279,11 @@ body {
 		margin: 50px;
 	}
 
+	/* Only for P3 css to fix spacing of certain images */
+	.ContentPicsB, .ContentPicsK, .ContentPicsS, .ContentPicsA{
+	    margin-left: 20%;
+	}
+
 	/* Contact */
 	.Contact {
 		display: inline-flex;
